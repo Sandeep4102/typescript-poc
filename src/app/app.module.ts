@@ -28,6 +28,7 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
+// import { FilterPipe } from './filter.pipe';
 // import { LoaderComponentComponent } from './commonComponents/loader-component/loader-component.component';
 
 export const cloudinaryLib = {

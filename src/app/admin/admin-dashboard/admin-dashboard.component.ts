@@ -15,6 +15,8 @@ export class AdminDashboardComponent implements OnInit {
   public showLoader: boolean = false;
 
   public allUserDetails: any = [];
+
+  public searchText : any
   constructor(
     private router: Router,
     private authService: AuthService,

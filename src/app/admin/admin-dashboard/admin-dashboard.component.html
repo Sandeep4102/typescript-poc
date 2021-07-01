@@ -5,8 +5,12 @@
         </div>
     </div>
 <br><br><br><br>
+<div class="search-user">
+  <input type="text" [(ngModel)]="searchText" placeholder="Search">
+  </div>
   <div class="container">
-    <div *ngFor="let item of allUserDetails,let i=index" class="card" style="width: 18rem;">
+    
+    <div *ngFor="let item of allUserDetails| filter : searchText " class="card" style="width: 18rem;">
         <img src="{{item.secureURL}}" class="card-img-top">  
         <div class="card-body">
           <div class="details">
