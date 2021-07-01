@@ -53,7 +53,7 @@
                 <br>
                 <div>
                   <label class="label">Phone</label>
-                  <input type="phone" class="form-control" placeholder="phone" name="user_phone"
+                  <input maxlength="10" type="phone" class="form-control" placeholder="phone" name="user_phone"
                     formControlName="phone" [ngClass]="{'is-invalid':submitted && f.phone.errors}">
                     <div style="color: red;" *ngIf="submitted && f.phone.errors?.required">
                       Please enter Phone

@@ -48,6 +48,19 @@
       "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625135539/mxae4mnyr1tmnluwkyl5.jpg",
       "role": "user",
       "active": true
+    },
+    {
+      "id": 70,
+      "firstName": "ERIC FOREMAN",
+      "email": "eric@gmail.com",
+      "phone": "1111111111",
+      "address": "princeton plainseburg",
+      "password": "eric",
+      "Cpassword": "eric",
+      "profileDescription": "eric ",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625136221/tfp1dqt12zubuf8tgbvb.jpg",
+      "role": "user",
+      "active": true
     }
   ]
 }
