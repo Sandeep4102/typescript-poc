@@ -83,7 +83,7 @@ export class UserDashboardComponent implements OnInit {
 
   getRoute() {
     this.activatedRoute.params.subscribe((data) => {
-      console.log(data, 'data from params');
+      // console.log(data, 'data from params');
       this.userId = data.id;
       this.getDetails();
     });
@@ -126,7 +126,7 @@ export class UserDashboardComponent implements OnInit {
     };
 
     const upsertResponse = (fileItem) => {
-      console.log(fileItem, 'itemmmmmmmm');
+      // console.log(fileItem, 'itemmmmmmmm');
       this.userDetail.secureURL = fileItem.data.secure_url;
       this.secureURL = fileItem.data.secure_url;
     };
@@ -148,7 +148,7 @@ export class UserDashboardComponent implements OnInit {
     if (event.target.files.length > 0) {
       this.images = event.target.files;
     }
-    console.log(this.images, 'image');
+    // console.log(this.images, 'image');
   }
 
   // currentData(){
@@ -166,7 +166,7 @@ export class UserDashboardComponent implements OnInit {
     this.showLoader = true;
     this.getDetailService.getUserById(this.userId).subscribe(
       (data) => {
-        console.log(data, 'Data from get service');
+        // console.log(data, 'Data from get service');
         this.showLoader = false;
         this.userDetail = data;
         if (this.userDetail) {
@@ -231,7 +231,13 @@ this.showConfirmPass = true
 
   onSubmit() {
     this.submitted = true;
-    console.log(this.userDetailForm.value, 'Valuee');
+    // console.log(this.userDetailForm.value, 'Valuee');
+    if(this.f.Cpassword.value == "")
+    {
+      this.userDetailForm.controls['Cpassword'].setValue(
+            this.userDetail.Cpassword
+          );
+    }
     if (
       this.userDetailForm.valid &&
       this.f.password.value == this.f.Cpassword.value
@@ -245,7 +251,7 @@ this.showConfirmPass = true
         .updateUser(this.userId, this.userDetailForm.value)
         .subscribe(
           (data) => {
-            console.log(data, 'DAta from put service');
+            // console.log(data, 'DAta from put service');
             this.showLoader = false;
             this.getDetails();
             this.editable = false;

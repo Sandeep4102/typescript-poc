@@ -42,7 +42,7 @@ export class UserLoginComponent implements OnInit {
     this.showLoader = true;
     this.getDetails.getAllUser().subscribe(
       (data) => {
-        console.log(data, 'Data from get details service');
+        // console.log(data, 'Data from get details service');
         this.allUserDetails = data;
         this.showLoader = false;
       },

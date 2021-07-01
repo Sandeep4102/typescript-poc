@@ -113,7 +113,7 @@ export class UserRegisterComponent implements OnInit {
     };
 
     const upsertResponse = (fileItem) => {
-      console.log(fileItem, 'itemmmmmmmm');
+      // console.log(fileItem, 'itemmmmmmmm');
       this.secureURL = fileItem.data.secure_url;
     };
 
@@ -134,12 +134,12 @@ export class UserRegisterComponent implements OnInit {
     if (event.target.files.length > 0) {
       this.images = event.target.files;
     }
-    console.log(this.images, 'image');
+    // console.log(this.images, 'image');
   }
 
   addUser() {
     this.submitted = true;
-    console.log(this.register.value);
+    // console.log(this.register.value);
     if (
       this.register.valid &&
       this.f.password.value == this.f.Cpassword.value
@@ -151,7 +151,7 @@ export class UserRegisterComponent implements OnInit {
         active: true,
         role: 'user',
       });
-      console.log(this.register.value, 'final value');
+      // console.log(this.register.value, 'final value');
       this.showLoader = true;
       this.saveUser(this.register.value);
     }
@@ -160,13 +160,13 @@ export class UserRegisterComponent implements OnInit {
   saveUser(val) {
     this.postDetails.saveUser(val).subscribe(
       (data) => {
-        console.log(data, 'Data from save user service');
+        // console.log(data, 'Data from save user service');
         this.showLoader = false;
         this.showSuccess();
         this.route.navigateByUrl('/login');
       },
       (Err: HttpErrorResponse) => {
-        console.log(Err.error);
+        // console.log(Err.error);
         this.showLoader = false;
       }
     );

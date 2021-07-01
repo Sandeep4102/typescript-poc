@@ -35,6 +35,19 @@
       "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625130648/whvejcu0swp1vabgo2eq.jpg",
       "role": "user",
       "active": true
+    },
+    {
+      "id": 4,
+      "firstName": "hugh laurie",
+      "email": "hugh@gmail.com",
+      "phone": "1234567890",
+      "address": "UK",
+      "password": "hugh3",
+      "Cpassword": "hugh3",
+      "profileDescription": "hugh ",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625135539/mxae4mnyr1tmnluwkyl5.jpg",
+      "role": "user",
+      "active": true
     }
   ]
 }

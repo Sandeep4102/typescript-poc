@@ -1,12 +1,13 @@
 <body>
     <div class="cont1">
         <div class="row">
-            <span class="text1">Welcome to Admin Dashboard</span>
+            <span class="text1">Welcome to Admin Dashboard <button (click)="logOut()" *ngIf="showLogOut">Logout</button></span>
+            
         </div>
     </div>
 <br><br><br><br>
 <div class="search-user">
-  <input type="text" [(ngModel)]="searchText" placeholder="Search">
+  <input type="text" [(ngModel)]="searchText" placeholder="Search User">
   </div>
   <div class="container">
     
