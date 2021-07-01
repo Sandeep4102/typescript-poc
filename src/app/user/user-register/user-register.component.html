@@ -1,0 +1,108 @@
+<div class="header-heading">
+ <span>Welcome To User Registration</span>
+</div>
+<div style="background-color: yellowgreen;">
+  <button (click)="back()" class="btn action btn-primary" id="btn">Back To Login</button>
+  </div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="wrapper">
+      <div class="login">
+        <div class="login-form">
+          <h1 class="login-title"></h1>
+          <div class="form-wrapper">
+            <div class="input-wrapper">
+              <form style="width: 100%;" [formGroup]="register" (ngSubmit)="addUser()">
+
+                <div [ngStyle]="{'display':'none'}">
+                  <label class="label">Id</label>
+                  <input type="text" class="form-control" placeholder="Id" formControlName="id">
+                </div>
+                <br>
+                <div>
+                  <label class="label">Name</label>
+                  <input type="text" class="form-control" placeholder="Name" name="user_name"
+                    formControlName='firstName' required aria-required="true"
+                    [ngClass]="{'is-invalid':submitted && f.firstName.errors}">
+                    <div style="color: red;" *ngIf="submitted && f.firstName.errors?.required">
+                      Please enter First Name
+                      </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Photograph</label>
+                  <div style="display:flex;">
+                    <input type="file" id="uploading-Images" ng2FileSelect [uploader]="uploader" accept="image/*"
+                      (change)="changefunction($event)">
+                    <img style="max-height: 120px;" [src]="secureURL">
+                  </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Email</label>
+                  <input type="email" class="form-control" placeholder="Email" name="user_email"
+                    formControlName="email" [ngClass]="{'is-invalid':submitted && f.email.errors}">
+                    <div style="color: red;" *ngIf="submitted && f.email.errors?.required">
+                      Please enter Email
+                      </div>
+                      <div style="color: red;" *ngIf="submitted && f.email.errors?.email">
+                        Please enter Valid Email Address
+                        </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Phone</label>
+                  <input type="phone" class="form-control" placeholder="phone" name="user_phone"
+                    formControlName="phone" [ngClass]="{'is-invalid':submitted && f.phone.errors}">
+                    <div style="color: red;" *ngIf="submitted && f.phone.errors?.required">
+                      Please enter Phone
+                      </div>
+                </div>
+                <div>
+                  <label class="label">Address</label>
+                  <input type="text" class="form-control" placeholder="Address" formControlName="address" [ngClass]="{'is-invalid':submitted && f.address.errors}">
+                  <div style="color: red;" *ngIf="submitted && f.address.errors?.required">
+                    Please enter  Address<Address></Address>
+                    </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Password</label>
+                  <input type="Password" class="form-control" placeholder="Password" formControlName="password" [ngClass]="{'is-invalid':submitted && f.password.errors}">
+                  <div style="color: red;" *ngIf="submitted && f.password.errors?.required">
+                    Please enter password
+                    </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Confirm Password</label>
+                  <input type="Password" class="form-control" placeholder="Confirm Password"
+                    formControlName="Cpassword" [ngClass]="{'is-invalid':submitted && f.Cpassword.errors}">
+                    <div style="color: red;" *ngIf="submitted && f.Cpassword.errors?.required">
+                      Please enter Confirm Password
+                      </div>
+                      <div style="color: red;" *ngIf="submitted && f.password.value != f.Cpassword.value">
+                        Password and Confirm Password Must match
+                        </div>
+                </div>
+                <br>
+                <div>
+                  <label class="label">Profile Description</label>
+                  <input type="text" class="form-control" placeholder="profileDescription"
+                    formControlName="profileDescription">
+                </div>
+
+                <button type="submit" class="btn action btn-primary" id="btn">Register</button>
+              </form>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-loader-component *ngIf="showLoader"></app-loader-component>

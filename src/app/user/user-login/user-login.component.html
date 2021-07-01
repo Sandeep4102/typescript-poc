@@ -1,0 +1,21 @@
+
+<div style="background-color: skyblue;">
+
+  <div class="full-screen-container">
+    <div class="login-container">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="text" placeholder="Enter your Email" [(ngModel)]="email" class="form-control">
+        <label for="pass">Password</label>
+        <input type="password" placeholder="Enter your Password" [(ngModel)]="password" class="form-control">
+        <div [ngStyle]="{'display' : (flag==false)? 'none' : 'block'}">
+          <h4 class="mt-3">Oops! Incorrect username or password 😣 </h4>
+        </div>
+        <button  (click)="userAuth()" class="btn-lg btn-danger mt-5">Login</button>
+      </div>
+      <h1>Sign up? <span><a class="navbar-brand" href="../userRegister">Click here to Create an account</a></span></h1>
+    </div>
+  </div>
+
+</div>
+<app-loader-component *ngIf="showLoader"></app-loader-component>

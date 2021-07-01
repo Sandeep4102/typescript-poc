@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    margin: 0;
+}
+
+body{
+    background: linear-gradient(to top, #c2f4fb 0%, #e7e7e7 100%);
+}
+
+.cont1{
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    transform: translate(-0%, -80%);
+    width: 100%;
+}
+.container span{
+    display: block;
+}
+.text1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: rgb(5, 5, 5);
+    text-align: center;
+    position: relative;
+    animation: text 3s 1;
+}
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 15px;
+        margin-bottom: -40px;
+        }
+}
+
+.full-screen-container {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    background-color: hsla(201, 100%, 6%, 0.795);
+    padding: 50px 30px;
+    min-width: 400px;
+    width: 50%;
+    max-width: 700px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    color: white;
+    font-weight: lighter;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+.input-group input {
+    font-size: 1.5em;
+    padding: .1em .25em;
+    background-color: hsla(0, 0%, 0%, 0.3);
+    border: 2px solid hsl(201, 100%, 6%);
+    outline: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: lighter;
+    width:40rem; 
+}
+
+.input-group input:focus {
+    border: 1px solid hsl(201, 100%, 50%)
+}
+
+.login-button:hover {
+    background-color: hsla(201, 100%, 50%, 0.3)
+}
+
+.login-button:focus {
+    background-color: hsla(201, 100%, 50%, 0.5)
+}
+
+h4{ 
+    color:rgb(235, 52, 6);
+}

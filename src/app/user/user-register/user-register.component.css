@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+ /*instagram : halaabubaker */
+ * ,*:after, *:before {
+    box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    background-color: #91c78866;
+    padding: 30px 15px;
+    /* background: linear-gradient(45deg, #90d18566, #91c78866); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login {
+    width: 100%;
+    max-width: 800px;
+    /* background-color: #2d3f48; */
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.4); */
+}
+.login .login-form {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    max-width: 70%;
+    background-color:cadetblue;
+    padding: 50px 45px;
+}
+
+h4{
+    color:white;
+}
+/* @media only screen and (max-width: 767.98px) {
+    .login .login-form {
+        max-width: 100%;
+   }
+}
+@media only screen and (max-width: 575.98px) {
+    .login .login-form {
+        padding: 40px 20px;
+   }
+} */
+/* .login .login-form .login-title {
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 3rem;
+    color: #fdfdfd;
+    margin-bottom: 25px;
+} */
+.login .login-form .form-wrapper .input-wrapper .label, .login .login-form .form-wrapper .input-wrapper .input {
+    display: block;
+    width: 100%;
+}
+.login .login-form .form-wrapper .input-wrapper .label {
+    padding-bottom: 3px;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+.login .login-form .form-wrapper .input-wrapper .input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.5px solid #cae9c4;
+}
+.login .login-form .form-wrapper .action-help {
+    padding: 20px 0;
+}
+
+.login .login-form .form-wrapper .action-help .help-link {
+    color: #583177;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.9rem;
+}
+.login .login-form .form-wrapper .action-help .help-link:hover {
+    color: #fe7092;
+}
+.login .login-form .form-wrapper .actions {
+    display: flex;
+    flex-flow: column;
+}
+.login .login-form .form-wrapper .actions .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    color: #fff;
+    background-color: #184d47;
+    text-decoration: none;
+    border: 1px solid #184d47;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.login .login-form .form-wrapper .actions .action:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 25px -15px rgba(0, 0, 0, 0.5);
+}
+
+/* .login .login-decoration {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    background-image: url(https://theherbalclinician.co.uk/wp-content/uploads/2016/02/alternative-complementary-herbal-medicine-768x512.jpg);
+    background-position: center;
+    background-size: cover;
+} */
+@media only screen and (max-width: 767.98px) {
+    .login .login-decoration {
+        display: none;
+   }
+}
+.cont1{
+    text-align: center;
+    position: absolute;
+    top: 8%;
+    transform: translate(-0%, -80%);
+    width: 100%;
+}
+.container span{
+    display: block;
+}
+.text1{
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: rgb(5, 5, 5);
+    text-align: center;
+    position: relative;
+    animation: text 3s 1;
+}
+
+@keyframes text{
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    50%{
+        letter-spacing: 35px;
+        margin-bottom: -40px;
+        }
+}
+
+.header-heading
+{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    background-color: yellowgreen;
+    height: 50px;
+    padding: 15px;
+    /* display: -webkit-box; */
+}

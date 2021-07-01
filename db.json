@@ -1,0 +1,40 @@
+{
+  "userData": [
+    {
+      "id": 53,
+      "firstName": "sandeep sarswat",
+      "email": "sandeep@gmail.com",
+      "phone": "1234567890",
+      "address": "BALLABGARH",
+      "password": "123456",
+      "confirmPassowrd": "12345",
+      "profileDescription": "this is my updated profile test 1 , updated from admin account",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1624713076/jpzvvmcgd4wuo4tb6d9z.jpg",
+      "Cpassword": "123456",
+      "role": "user",
+      "active": true
+    },
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "adminPass",
+      "phone": "1234567890",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1624713076/jpzvvmcgd4wuo4tb6d9z.jpg",
+      "role": "admin"
+    },
+    {
+      "id": 68,
+      "firstName": "john",
+      "email": "john@gmail.com",
+      "phone": "1234556",
+      "address": "20 Aberdeen Street",
+      "password": "123456",
+      "Cpassword": "123456",
+      "profileDescription": "123456",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625130648/whvejcu0swp1vabgo2eq.jpg",
+      "role": "user",
+      "active": true
+    }
+  ]
+}
