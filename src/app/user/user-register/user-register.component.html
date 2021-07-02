@@ -77,7 +77,7 @@
                 <br>
                 <div>
                   <label class="label">Confirm Password</label>
-                  <input type="Password" class="form-control" placeholder="Confirm Password"
+                  <input type="text" class="form-control" placeholder="Confirm Password"
                     formControlName="Cpassword" [ngClass]="{'is-invalid':submitted && f.Cpassword.errors}">
                     <div style="color: red;" *ngIf="submitted && f.Cpassword.errors?.required">
                       Please enter Confirm Password

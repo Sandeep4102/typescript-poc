@@ -24,19 +24,6 @@
       "role": "admin"
     },
     {
-      "id": 68,
-      "firstName": "john",
-      "email": "john@gmail.com",
-      "phone": "1234556",
-      "address": "20 Aberdeen Street",
-      "password": "123456",
-      "Cpassword": "123456",
-      "profileDescription": "123456",
-      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625130648/whvejcu0swp1vabgo2eq.jpg",
-      "role": "user",
-      "active": true
-    },
-    {
       "id": 4,
       "firstName": "hugh laurie",
       "email": "hugh@gmail.com",
@@ -59,6 +46,19 @@
       "Cpassword": "eric",
       "profileDescription": "eric ",
       "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625136221/tfp1dqt12zubuf8tgbvb.jpg",
+      "role": "user",
+      "active": true
+    },
+    {
+      "id": 12,
+      "firstName": "amit kumar",
+      "email": "amit@gmail.com",
+      "phone": "5151515151",
+      "address": "gajiabad",
+      "password": "amitpass1",
+      "Cpassword": "amitpass1",
+      "profileDescription": "test,updated while showing demo",
+      "secureURL": "https://res.cloudinary.com/ddhbxbhqh/image/upload/v1625203824/xrhtcg17ryf0tl9cjezh.jpg",
       "role": "user",
       "active": true
     }
